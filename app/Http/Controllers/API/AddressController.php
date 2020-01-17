@@ -34,9 +34,22 @@ class AddressController extends Controller
      * @param \Illuminate\Http\Request $request
      * @param User $user
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request, User $user)
     {
+
+        $this->validate($request, [
+            'region' => 'required',
+            'division' => 'required',
+            'sun_division' => 'required',
+            'city' => 'required',
+            'municipality' => 'required',
+            'quarter' => 'required',
+            'address' => 'required',
+            'backup_telephone_number' => 'required'
+        ]);
+
         $address = new Address($request-> all());
         $user->address()->save($address);
 

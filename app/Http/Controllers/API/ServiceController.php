@@ -28,9 +28,16 @@ class ServiceController extends Controller
      *
      * @param Request $request
      * @return serviceCollection
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
         $service = new Service;
 
         $service->name = $request->name;

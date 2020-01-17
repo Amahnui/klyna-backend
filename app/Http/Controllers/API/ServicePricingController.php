@@ -29,9 +29,16 @@ class ServicePricingController extends Controller
      *
      * @param Request $request
      * @return ServicePricingResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required',
+            'category' => 'required',
+            'start_price' => 'required'
+        ]);
+
         $servicePricing = new ServicePricing;
 
         $servicePricing->name = $request->name;

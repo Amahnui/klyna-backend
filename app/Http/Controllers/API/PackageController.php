@@ -28,11 +28,21 @@ class PackageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return PackageResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+           'type' => 'required',
+           'description' => 'required',
+           'cover_photo' => 'required',
+           'background_photo' => 'required',
+           'price' => 'required'
+        ]);
+
         $package = new Package;
         $package->type = $request->type;
         $package->description = $request->description;

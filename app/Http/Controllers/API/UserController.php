@@ -33,9 +33,23 @@ class UserController extends Controller
      *
      * @param Request $request
      * @return UserResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'phone_number' => 'required',
+            'email' => 'required | email',
+            'password' =>  ['required',
+                            'min:6',
+                            'regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[!$#%]).*$/',
+                            'confirmed'
+                            ],
+        ]);
+
         $user = new User;
 
         $user->first_name = $request->first_name;
@@ -47,10 +61,7 @@ class UserController extends Controller
         $user->role = $request->role;
         $user->avatar = $request->avatar;
         $user->primary_language = $request->primary_language;
-        $user->credit_score = $request->credit_score;
-        $user->last_login_at = $request->last_login_at;
-        $user->last_login_ip = $request->last_login_ip;
-        $user->device = $request->device;
+        $user->credit_score = 0;
 
         $user->save();
 

@@ -29,11 +29,20 @@ class GiftCardController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return CouponResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'code' => 'required',
+            'service' => 'required',
+            'price' => 'required',
+            'expiration_date' => 'required',
+            'is_used' => 'required'
+        ]);
+
         if($request->user()->role != 'admin') {
             return response()->json(['error' => 'you are not allowed to perform this operation'], 403);
         }

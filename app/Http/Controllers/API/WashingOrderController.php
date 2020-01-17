@@ -34,6 +34,7 @@ class WashingOrderController extends Controller
      */
     public function store(Request $request)
     {
+
         $washingOrder = new WashingOrder;
 
         $washingOrder->order_number = $request->order_number;

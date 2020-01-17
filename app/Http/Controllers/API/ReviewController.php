@@ -35,6 +35,11 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'rating' => 'required',
+            'body' => 'required'
+        ]);
+
         $review = new Review;
         $review->service_id = $request->service_id;
         $review->rating = $request->rating;

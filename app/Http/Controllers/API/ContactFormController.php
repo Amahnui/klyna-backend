@@ -31,11 +31,19 @@ class ContactFormController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return ContactFormResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required',
+            'subject' => 'required',
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+
         $contact =  ContactForm::create($request->all());
 
         return  new ContactFormResource($contact);

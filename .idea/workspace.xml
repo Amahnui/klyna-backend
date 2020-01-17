@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cca5086e-f9d6-4746-b692-7b1b5fb2c9c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TransactionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Review/ReviewCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Service/ServiceCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Service/ServiceResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/WashItemCollection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AddressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ContactFormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ContactFormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/CouponController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/CouponController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/GiftCardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/GiftCardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/JobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PackageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PackageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PartnershipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PartnershipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PickupRequestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PickupRequestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ReviewController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServicePricingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServicePricingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ShippingZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ShippingZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/WashItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/WashItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/WashingOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/WashingOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReviewResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Review/ReviewResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Transaction/TransactionResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WahingOrderCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WashingOrderCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WahingOrderResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WashingOrderResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_05_170415_create_washing_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_05_170415_create_washing_orders_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,7 @@
       <workItem from="1579079809519" duration="532000" />
       <workItem from="1579099551275" duration="5260000" />
       <workItem from="1579115311161" duration="13158000" />
-      <workItem from="1579186940846" duration="2658000" />
+      <workItem from="1579186940846" duration="7843000" />
     </task>
     <servers />
   </component>

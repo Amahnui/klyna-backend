@@ -35,9 +35,26 @@ class CouponController extends Controller
      *
      * @param Request $request
      * @return CouponCollection
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+        $this->validate( $request, [
+
+            'code' => 'required',
+            'price' => 'required',
+            'type' => 'required',
+            'discount_type' => 'required',
+            'description' => 'required',
+            'expiration_date' => 'required',
+            'usage_count' => 'required',
+            'individual_use' => 'required',
+            'usage_limit' => 'usage_limit',
+            'maximum_limit' => 'maximum_limit',
+            'minimum_limit' => 'minimum_limit',
+            'usage_limit_per_user' => 'usage_limit_per_user'
+        ]);
+
         if($request->user()->role != 'admin') {
             return response()->json(['error' => 'you are not allowed to perform this operation'], 403);
         }

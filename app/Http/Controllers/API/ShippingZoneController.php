@@ -32,9 +32,16 @@ class ShippingZoneController extends Controller
      *
      * @param Request $request
      * @return ShippingZoneResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'zone_name',
+            'cost'
+        ]);
+
         $shippingZone = new  ShippingZone;
 
         $shippingZone->zone_name = $request->zone_name;

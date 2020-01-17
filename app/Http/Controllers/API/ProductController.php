@@ -29,11 +29,22 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return ProductResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required',
+            'regular_price' => 'required',
+            'SKU' => 'required',
+            'quantity' => 'required',
+            'stock_threshold' => 'required'
+        ]);
+
         $product = new Product;
 
         $product->name = $request->name;

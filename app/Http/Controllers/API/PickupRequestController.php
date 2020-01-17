@@ -38,6 +38,7 @@ class PickupRequestController extends Controller
         return new PickupRequestResource($pickup);
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -49,6 +50,21 @@ class PickupRequestController extends Controller
         return  new PickupRequestResource($pickupRequest);
     }
 
+
+    /**
+     * Display the specified resource.
+     *
+     * @param PickupRequest $pickupRequest
+     * @return PickupRequestResource
+     */
+    public function attended(PickupRequest $pickupRequest)
+    {
+        $pickupRequest->attended_to = true;
+
+        $pickupRequest->save();
+
+        return  new PickupRequestResource($pickupRequest);
+    }
 
     /**
      * Remove the specified resource from storage.

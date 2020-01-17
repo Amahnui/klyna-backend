@@ -34,11 +34,23 @@ class JobController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return JobResource
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
+
+        $this->validate( $request, [
+           'position' => 'required',
+           'department'=> 'required',
+           'role_summary' => 'required',
+           'responsibilities' => 'required',
+            'qualifications' => 'required',
+            'is_open' => 'required'
+
+        ]);
+
         if($request->user()->role != 'admin') {
             return response()->json(['error' => 'you are not allowed to perform this operation'], 403);
         }
