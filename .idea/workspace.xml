@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cca5086e-f9d6-4746-b692-7b1b5fb2c9c9" name="Default Changelist" comment="" />
+    <list default="true" id="cca5086e-f9d6-4746-b692-7b1b5fb2c9c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TransactionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Review/ReviewCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Service/ServiceCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Service/ServiceResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServicePricingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServicePricingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ShippingZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ShippingZoneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/WashingOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/WashingOrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReviewResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Review/ReviewResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Transaction/TransactionResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WahingOrderCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WashingOrderCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WahingOrderResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/WashingOrder/WashingOrderResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_05_170415_create_washing_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_05_170415_create_washing_orders_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +32,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,13 +142,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1W4aKtczPJNmGWN0DqU9iEQBU1W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.3.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -141,11 +169,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Resources/Transaction" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources/User" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources/Review" />
       <recent name="$PROJECT_DIR$/app/Http/Resources/QuoteRequest" />
       <recent name="$PROJECT_DIR$/app/Http/Resources/Refunds" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/ShippingZones" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/Partnership" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/Pickup" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,18 +216,22 @@
       <workItem from="1579011874303" duration="1016000" />
       <workItem from="1579079809519" duration="532000" />
       <workItem from="1579099551275" duration="5260000" />
-      <workItem from="1579115311161" duration="4370000" />
+      <workItem from="1579115311161" duration="13158000" />
+      <workItem from="1579186940846" duration="2658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="503" y="236" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578720303072">
+    <state x="503" y="236" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579144049748">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="503" y="236" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1578720303072" />
+    <state x="503" y="236" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1579144049748" />
     <state x="454" y="457" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578796795666">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -224,10 +256,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1046" y="421" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1578628050781" />
-    <state x="1367" y="399" key="com.intellij.ide.util.TipDialog" timestamp="1579115393300">
+    <state x="1367" y="399" key="com.intellij.ide.util.TipDialog" timestamp="1579186948568">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1367" y="399" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1579115393300" />
+    <state x="1367" y="399" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1579186948568" />
     <state x="765" y="319" key="refactoring.ChangeSignatureDialog" timestamp="1579105071685">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

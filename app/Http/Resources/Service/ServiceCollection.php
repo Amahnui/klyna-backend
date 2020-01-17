@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources\WashingOrder;
+namespace App\Http\Resources\Service;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class WahingOrderCollection extends ResourceCollection
+class serviceCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -14,6 +14,9 @@ class WahingOrderCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'name' => $this->name,
+            'description' => $this->description,
+        ];
     }
 }

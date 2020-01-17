@@ -26,6 +26,8 @@ class WashingOrder extends Model
         'store_agent',
         'washing_agent',
         'delivery_agent',
+        'delivery_status',
+        'delivery_date'
     ];
 
 

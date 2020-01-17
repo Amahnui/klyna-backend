@@ -3,62 +3,85 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ShippingZoneResource;
+use App\Http\Resources\ShippingZones\ShippingZoneCollection;
+use App\ShippingZone;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class ShippingZoneController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:api')->except('index', 'show');
+    }
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return ShippingZoneCollection
      */
     public function index()
     {
-        //
+        return new ShippingZoneCollection(ShippingZone::paginate());
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return ShippingZoneResource
      */
     public function store(Request $request)
     {
-        //
+        $shippingZone = new  ShippingZone;
+
+        $shippingZone->zone_name = $request->zone_name;
+        $shippingZone->cost = $request->cost;
+
+        $shippingZone->save();
+
+        return new ShippingZoneResource($shippingZone);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param ShippingZone $shippingZone
+     * @return ShippingZoneResource
      */
-    public function show($id)
+    public function show(ShippingZone $shippingZone)
     {
-        //
+        return new ShippingZoneResource($shippingZone);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param ShippingZone $shippingZone
+     * @return void
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, ShippingZone $shippingZone)
     {
-        //
+        $shippingZone->update($request->only([
+            'zone_name',
+            'cost'
+        ]));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param ShippingZone $shippingZone
+     * @return JsonResponse
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(ShippingZone $shippingZone)
     {
-        //
+        $shippingZone->delete();
+
+        return response()->json(null, 204);
     }
 }

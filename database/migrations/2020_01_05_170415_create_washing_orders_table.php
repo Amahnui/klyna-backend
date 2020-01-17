@@ -27,9 +27,11 @@ class CreateWashingOrdersTable extends Migration
             $table->string('items');
             $table->float('item_count');
             $table->integer('pickup_agent');          
-            $table->integer('store_agent');           
-            $table->integer('washing_agent');
-            $table->integer('delivery_agent');            
+            $table->integer('store_agent')->nullable();           
+            $table->integer('washing_agent')->nullable();
+            $table->integer('delivery_agent')->nullable();            
+            $table->integer('delivery_status')->nullable();            
+            $table->integer('delivery_date')->nullable();            
             $table->timestamps();
             $table->softDeletes();
 
